@@ -8,7 +8,7 @@ class Admin::ProjectsController < ApplicationController
     end
 
     def new
-        @Project = Project.new
+        @project = Project.new
     end
 
     def create
