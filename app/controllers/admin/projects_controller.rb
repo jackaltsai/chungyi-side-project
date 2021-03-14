@@ -18,11 +18,15 @@ class Admin::ProjectsController < ApplicationController
           flash.now[:alert] = "project was failed to create"
           render :new
         end
-      end
+    end
+
+    def show
+        @project = Project.find(params[:id])
+    end
     
-      private
+    private
     
-      def project_params
+    def project_params
         params.require(:project).permit(:name, :description)
-      end
+    end
 end
