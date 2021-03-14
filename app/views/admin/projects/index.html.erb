@@ -1,1 +1,12 @@
 <h1>後台</h1>
+<ul>
+  <% @projects.each do |project| %>
+  <li>
+    <%= project.name %>
+    <%= link_to 'Show', admin_project_path(project) %>
+    <%= link_to 'Edit', edit_admin_project_path(project) %>
+    <%= link_to 'Delete', admin_project_path(project), method: :delete, data: {confirm:"Are you sure?"} %>
+  </li>
+  <% end %>
+</ul>
+<%= link_to 'New Project', new_admin_project_path %>
