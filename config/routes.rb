@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root "projects#index"
 
   namespace :admin do
-    resources: projects
+    resources :projects
     root "projects#index"
   end
 end
