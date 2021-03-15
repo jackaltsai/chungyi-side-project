@@ -1,0 +1,6 @@
+<h1><%= @project.name %></h1>
+Description:<%= @project.description %><br>
+<%= image_tag @project.image.url, width: '600px' %>
+<br>
+
+<%= link_to 'Back to index', admin_projects_path %>
