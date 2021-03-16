@@ -32,6 +32,7 @@ gem 'carrierwave', '~> 2.2'
 gem 'kaminari', '~> 1.2', '>= 1.2.1'
 gem 'kaminari-activerecord', '~> 1.2', '>= 1.2.1'
 gem 'bootstrap', '~> 4.6'
+gem "autoprefixer-rails"
 
 group :development, :test do
   gem 'capistrano-rails'
