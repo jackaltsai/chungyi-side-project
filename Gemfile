@@ -4,19 +4,19 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '~> 6.1.3'
+gem 'rails', '~> 6.1', '>= 6.1.3'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4', '>= 1.4.2'
 # Use Puma as the app server
-gem 'puma', '~> 5.0'
+gem 'puma', '~> 5.2', '>= 5.2.2'
 # Use SCSS for stylesheets
-gem 'sass-rails', '>= 6'
+gem 'sass-rails', '~> 6.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.2', '>= 5.2.1'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5.2', '>= 5.2.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.7'
+gem 'jbuilder', '~> 2.11', '>= 2.11.2'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -26,11 +26,12 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.4.4', require: false
-gem 'devise'
-gem 'carrierwave'
-gem 'kaminari'
-gem 'bootstrap', '~> 5.0.0.beta2'
+gem 'bootsnap', '~> 1.7', '>= 1.7.2'
+gem 'devise', '~> 4.7', '>= 4.7.3'
+gem 'carrierwave', '~> 2.2'
+gem 'kaminari', '~> 1.2', '>= 1.2.1'
+gem 'kaminari-activerecord', '~> 1.2', '>= 1.2.1'
+gem 'bootstrap', '~> 4.6'
 
 group :development, :test do
   gem 'capistrano-rails'
